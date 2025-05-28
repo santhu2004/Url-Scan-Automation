@@ -61,11 +61,15 @@ Add the following line:
 
 <pre>*/30 * * * * /usr/bin/python3 /path/to/Url-Scan-Automation/automation.py >> /path/to/log.txt 2>&1</pre>
 
-📝 Make sure to replace /path/to/... with the actual full path to your Python script and Python executable.
+📝 Make sure to replace /path/to/... with the actual full path to your Python script.
 
 📁 Output File
 
 The script creates and updates seen_results.json to store previously alerted scans and avoid duplicates.
+
+📩 Telegram Alert
+
+The script handles sending alerts to notify if new phishing sites are live
 
 🤝 Contributions
 
