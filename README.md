@@ -23,6 +23,7 @@ Avoids duplicate alerts using a local JSON cache.
 
 git clone https://github.com/santhu2004/Url-Scan-Automation.git
 cd Url-Scan-Automation
+<pre> ```bash git clone https://github.com/user/repo.git ``` </pre>
 
 2. Install dependencies
 
