@@ -1,6 +1,6 @@
-<h1>Url-Scan-Automation
- A Python script to monitor phishing attempts using URLScan.io and send alerts via Telegram. Designed for security researchers and threat intel.
-</h1>
+<h1>Url-Scan-Automation</h1>
+A Python script to monitor phishing attempts using URLScan.io and send alerts via Telegram. Designed for security researchers and threat intel.
+
 <h2>🚀 Features</h2>
 
 - Monitors recent URLScan.io results for signs of phishing.
