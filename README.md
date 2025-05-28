@@ -26,7 +26,7 @@ cd Url-Scan-Automation </pre>
 
 2. Install dependencies
 
-pip install requests
+<pre>pip install requests</pre>pre
 
 3. Configure your credentials
 
@@ -34,9 +34,9 @@ Open the Python script (automation.py) and replace the placeholders at the top o
 
 #===========Configuration============#
 
-#  Enter your URLScan.io API key
+<h2>#  Enter your URLScan.io API key
 API_KEY = 'ENTER_YOUR_URLSCAN_API_KEY_HERE'
-
+</h2>
 #  Enter your Telegram bot token (create from @BotFather)
 TG_BOT_TOKEN = 'ENTER_YOUR_TELEGRAM_BOT_TOKEN_HERE'
 
