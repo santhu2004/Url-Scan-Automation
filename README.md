@@ -1,23 +1,23 @@
-# Url-Scan-Automation
+<h1>Url-Scan-Automation
  A Python script to monitor phishing attempts using URLScan.io and send alerts via Telegram. Designed for security researchers and threat intel.
+</h1>
+<h2>🚀 Features</h2>
 
-🚀 Features
+- Monitors recent URLScan.io results for signs of phishing.
 
-Monitors recent URLScan.io results for signs of phishing.
+- Filters out legitimate domains using custom search queries.
 
-Filters out legitimate domains using custom search queries.
+- Sends alerts on Telegram with:
 
-Sends alerts on Telegram with:
+   - Site title
 
-- Site title
+   - Screenshot
 
-- Screenshot
+   - URLScan result link
 
-- URLScan result link
+- Avoids duplicate alerts using a local JSON cache.
 
-Avoids duplicate alerts using a local JSON cache.
-
-🔧 Setup
+<h2>🔧 Setup </h2>
 
 1. Clone this repository
 
@@ -26,7 +26,7 @@ cd Url-Scan-Automation </pre>
 
 2. Install dependencies
 
-<pre>pip install requests</pre>pre
+<pre>pip install requests</pre>
 
 3. Configure your credentials
 
@@ -34,31 +34,32 @@ Open the Python script (automation.py) and replace the placeholders at the top o
 
 #===========Configuration============#
 
-<h2>#  Enter your URLScan.io API key
+<pre>
+#  Enter your URLScan.io API key
 API_KEY = 'ENTER_YOUR_URLSCAN_API_KEY_HERE'
-</h2>
+
 #  Enter your Telegram bot token (create from @BotFather)
 TG_BOT_TOKEN = 'ENTER_YOUR_TELEGRAM_BOT_TOKEN_HERE'
 
 #  Enter your Telegram chat ID
 TG_CHAT_ID = 'ENTER_YOUR_TELEGRAM_CHAT_ID_HERE'
+</pre>
 
-You can also modify the BRAND_QUERIES dictionary to add or adjust the brands and search queries you want to monitor.
+Modify the BRAND_QUERIES dictionary to add or adjust the brands and search queries you want to monitor.
 
+4. Running Automatically with Cron
 
-⏱️ Running Automatically with Cron
-
-You can run the script periodically using a cron job for proactive monitoring.
+Run the script periodically using a cron job for proactive monitoring.
 
 Example: Run every 30 minutes
 
 Open the crontab:
 
-crontab -e
+<pre>crontab -e</pre>
 
 Add the following line:
 
-*/30 * * * * /usr/bin/python3 /path/to/Url-Scan-Automation/automation.py >> /path/to/log.txt 2>&1
+<pre>*/30 * * * * /usr/bin/python3 /path/to/Url-Scan-Automation/automation.py >> /path/to/log.txt 2>&1</pre>
 
 📝 Make sure to replace /path/to/... with the actual full path to your Python script and Python executable.
 
